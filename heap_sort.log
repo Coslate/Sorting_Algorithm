@@ -1,0 +1,10 @@
+rm -rf ./exec_output/heap_sort_main.o
+g++ -g -Wall -O3  -c heap_sort.cpp -I ./include -o ./exec_output/heap_sort.o
+g++ -g -Wall -O3  -I ./include heap_sort_main.cpp ./exec_output/heap_sort.o -o ./exec_output/heap_sort_main.o
+./exec_output/heap_sort_main.o
+---H.S initialize---
+H.S = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+---before HeapSort---
+H.S = [992, 483, 217, 868, 915, 238, 974, 945, 409, 84]
+---after HeapSort---
+H.S = [84, 217, 238, 409, 483, 868, 915, 945, 974, 992]
